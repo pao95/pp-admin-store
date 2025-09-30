@@ -1,0 +1,16 @@
+# Ignorar archivos compilados
+build
+dist
+coverage
+
+# Ignorar archivos de dependencias
+node_modules
+
+# Ignorar archivos de configuración específicos
+.eslintrc
+.prettierrc
+package-lock.json
+yarn.lock
+
+# Ignorar archivos markdown (opcional)
+*.md

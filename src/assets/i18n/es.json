@@ -1,0 +1,631 @@
+{
+  "login": {
+    "tid_title_slogan": "Solución efectiva",
+    "tid_title_slogan_second": "a tus necesidades.",
+    "login_title": "Iniciar sesión",
+    "email_label": "Dirección de correo electrónico",
+    "password_label": "Contraseña",
+    "remember_me": "Recordarme",
+    "forgot_password_link": "¿Olvidaste tu contraseña?",
+    "submit_button_title": "Iniciar sesión",
+    "footer_link_about_us": "Acerca de nosotros",
+    "footer_link_objectives": "Lo que nos impulsa",
+    "footer_link_why_choose_us": "Por qué elegirnos",
+    "something_went_wrong_title": "Algo salió mal",
+    "something_went_wrong_description": "Por favor vuelve a intentarlo luego.",
+    "close_session": "Cerrar sesión",
+    "validations": {
+      "email_invalid": "Campo inválido: Este campo debe ser un email",
+      "password_required": "Campo requerido",
+      "password_min_length": "Campo inválido: La contraseña debe tener al menos 8 caracteres"
+    },
+    "errors": {
+      "passwordChangeRequired": "Es necesario cambiar la contraseña.",
+      "login": "Error al iniciar sesión",
+      "refreshToken": "Error al refrescar el token",
+      "decodeJWT": "Error al decodificar el token",
+      "extractPermissionsFromToken": "Error al extraer los permisos.",
+      "getPermissions": "Error al obtener los permisos."
+    }
+  },
+  "protected_page_info": {
+    "title": "Lo sentimos..",
+    "description": "No tienes permisos para acceder a esta página y/o realizar esta acción.",
+    "button": "Volver al inicio"
+  },
+  "resetPassword": {
+    "title": "Cambiar Contraseña",
+    "email_label": "Dirección de correo electrónico",
+    "current_password_label": "Contraseña actual",
+    "new_password_label": "Nueva contraseña",
+    "confirm_password_label": "Repetir nueva contraseña",
+    "back_to_login": "Volver al login",
+    "submit_button_title": "Cambiar Contraseña",
+    "validations": {
+      "email_invalid": "Campo inválido: Este campo debe ser un email",
+      "password_required": "Campo requerido",
+      "password_min_length": "Campo inválido: La contraseña debe tener al menos 8 caracteres",
+      "passwords_not_match": "Las contraseñas no coinciden"
+    },
+    "success": {
+      "password_updated": "Contraseña actualizada exitosamente"
+    },
+    "error": {
+      "password_updated": "Error al actualizar la contraseña"
+    }
+  },
+  "home": {
+    "welcome": "Bienvenido!",
+    "welcome_subtitle": "Gestión centralizada de comercios y sucursales.",
+    "commerce": {
+      "title": "Comercios",
+      "description": "Alta, edición y visualización de comercios y sucursales habilitados para operar con préstamos de consumo.",
+      "button": "Ingresar al módulo"
+    },
+    "report": {
+      "title": "Reportes",
+      "description": "Visualización de metricas y ventas por comercio.",
+      "button": "Ingresar al módulo"
+    }
+  },
+  "store": {
+    "title": "Comercios",
+    "description": "Alta, edición y visualización de comercios y sucursales habilitados para operar con préstamos de consumo.",
+    "addStore": "Nuevo comercio",
+    "errors": {
+      "getStores": "Error al obtener los comercios. Por favor, intente nuevamente."
+    },
+    "list": {
+      "description": "Accedé al listado completo, editá información clave o sumá nuevas sucursales fácilmente.",
+      "headerBox": {
+        "title": "Comercios adheridos",
+        "description": "Consultá su estado actual, cantidad de sucursales y más."
+      },
+      "table": {
+        "socialReason": "Razón Social",
+        "cuit": "CUIT",
+        "status": "Estado",
+        "createdAt": "Fecha de creación",
+        "noStores": "No hay comercios registrados actualmente.",
+        "actions": "Acciones",
+        "branches": "Cant. Sucursales",
+        "editStore": "Editar comercio",
+        "viewStore": "Ver detalle",
+        "deleteStore": "Eliminar comercio",
+        "editBranches": "Editar sucursales",
+        "active": "Activo",
+        "inactive": "Inactivo"
+      },
+      "filters": {
+        "all": "Todos",
+        "enabled": "Activos",
+        "disabled": "Inactivos",
+        "newestFirst": "Más recientes",
+        "oldestFirst": "Más antiguos",
+        "search_placeholder": "Buscar por razón social o CUIT",
+        "clearFilters": "Limpiar filtros",
+        "state_placeholder": "Estado",
+        "order_placeholder": "Ordenar por"
+      }
+    },
+    "register": {
+      "title": "Registrar nuevo comercio",
+      "description": "Completa el formulario para dar de alta un nuevo comercio.",
+      "headerBox": {
+        "title": "Datos del comercio",
+        "description": "Ingresá los datos principales del comercio para habilitar su operación dentro del sistema. "
+      },
+      "step1": {
+        "title": "Datos del titular",
+        "description": "Ingresá los datos personales y de contacto del titular. Estos deben coincidir con los documentos que adjuntes más adelante.",
+        "personalData": {
+          "title": "Datos personales",
+          "description": "Completá los datos personales del titular del comercio."
+        },
+        "infoDescription": "El e-mail ingresado se usará para crear el usuario del titular y enviarle sus datos de acceso.",
+        "infoDescriptionTooltip": "Este e-mail se usará para crear el usuario del titular.",
+        "contactData": {
+          "title": "Datos de contacto",
+          "description": "Completá los datos de contacto del titular del comercio."
+        },
+        "addressData": {
+          "title": "Datos del domicilio",
+          "description": "Completá los datos de dirección del titular del comercio."
+        },
+        "fields": {
+          "lastNameUser": "Apellido",
+          "firstNameUser": "Nombre",
+          "dniUser": "DNI",
+          "cuilUser": "CUIL",
+          "birthDateUser": "Fecha de nacimiento",
+          "genderUser": "Género",
+          "areaCodeUser": "Código de área",
+          "phoneNumberUser": "Número de teléfono",
+          "emailUser": "E-mail",
+          "addressUser": "Calle",
+          "addressNumberUser": "Número",
+          "localityUser": "Localidad",
+          "provinceUser": "Provincia",
+          "zipCodeUser": "Código Postal"
+        },
+        "placeholders": {
+          "lastNameUser": "Ingrese el apellido",
+          "firstNameUser": "Ingrese el nombre",
+          "dniUser": "Ingrese el DNI",
+          "cuilUser": "Ingrese el CUIL",
+          "birthDateUser": "Seleccione fecha",
+          "genderUser": "Seleccione el género",
+          "areaCodeUser": "Seleccione código de área",
+          "phoneNumberUser": "Ingrese el número de teléfono",
+          "emailUser": "usuario@dominio.com",
+          "addressUser": "Ingrese la calle",
+          "addressNumberUser": "Número",
+          "localityUser": "Ingrese la localidad",
+          "provinceUser": "Seleccione la provincia",
+          "zipCodeUser": "Ingrese el código postal"
+        }
+      },
+      "step2": {
+        "title": "Datos fiscales y comercio",
+        "description": "Completá los datos fiscales y del comercio.",
+        "taxData": {
+          "title": "Datos fiscales"
+        },
+        "businessData": {
+          "title": "Datos del comercio"
+        },
+        "legalAddress": {
+          "title": "Domicilio legal"
+        },
+        "fields": {
+          "businessNameStore": "Razón Social",
+          "tradeNameStore": "Nombre de fantasía",
+          "streetStore": "Calle",
+          "streetNumberStore": "Nro",
+          "floorStore": "Piso",
+          "apartmentStore": "Depto",
+          "zipCodeStore": "Código Postal",
+          "localityStore": "Localidad",
+          "provinceStore": "Provincia",
+          "emailStore": "E-mail",
+          "vatConditionStore": "Condición IVA",
+          "cuitStore": "CUIT",
+          "iibbRegisteredStore": "Inscripción en IIBB",
+          "profitsRegisteredStore": "Inscripto a ganancias",
+          "incomeTaxRegisteredStore": "¿Inscripto en Ganancias?",
+          "categoryStore": "Rubro/s"
+        },
+        "placeholders": {
+          "businessNameStore": "Ingrese la razón social",
+          "tradeNameStore": "Ingrese el nombre de fantasía",
+          "streetStore": "Ingrese la calle",
+          "streetNumberStore": "Número",
+          "floorStore": "Ingrese el piso",
+          "apartmentStore": "Ingrese el departamento",
+          "zipCodeStore": "Ingrese el código postal",
+          "localityStore": "Ingrese la localidad",
+          "provinceStore": "Seleccione la provincia",
+          "emailStore": "usuario@dominio.com",
+          "vatConditionStore": "Seleccione la condición IVA",
+          "cuitStore": "Ingrese el CUIT",
+          "iibbRegisteredStore": "Seleccione la inscripción en IIBB",
+          "profitsRegisteredStore": "Seleccione la inscripción a ganancias",
+          "categoryStore": "Seleccione el/los rubro/s"
+        }
+      },
+      "step3": {
+        "title": "Documentación requerida",
+        "description": "Adjuntá los documentos requeridos para completar el registro.",
+        "taxData": {
+          "title": "Documentación fiscal"
+        },
+        "holderData": {
+          "title": "Datos del titular"
+        },
+        "comercialData": {
+          "title": "Documentación comercial"
+        },
+        "identityData": {
+          "title": "Identidad visual del comercio"
+        },
+        "tooltipText": {
+          "powerOfAttorneyDocument": "Debe adjuntarse un documento que acredite la autoridad del administrador del comercio, como el poder del titular, acta de designación de autoridad u otro documento oficial que lo habilite.",
+          "storeRegistrationFormDocument": "Debe adjuntarse solo si un ejecutivo de ventas visitó el comercio y se firmó el formulario de alta con las condiciones comerciales. En caso contrario, este campo puede dejarse vacío."
+        },
+
+        "documents": {
+          "title": "Documentación requerida",
+          "description": "Adjuntá los documentos requeridos para completar el registro. Todos los archivos son obligatorios.",
+          "dniDocument": "Documento de identidad",
+          "cuitDocument": "Constancia de CUIT",
+          "businessRegistrationDocument": "Inscripción comercial",
+          "taxCertificateDocument": "Certificado fiscal",
+          "noDocuments": "No se han adjuntado documentos aún.",
+          "afipRegistrationDocument": "Inscripción AFIP",
+          "iibbRegistrationDocument": "Inscripción Ingresos Brutos",
+          "dniFrontDocument": "Frente del DNI del Titular",
+          "dniBackDocument": "Dorso del DNI del Titular",
+          "powerOfAttorneyDocument": "Poder de Asignación del Titular",
+          "storeRegistrationFormDocument": "Formulario de Alta del Comercio",
+          "brandLogoDocument": "Ícono/Logo de la Marca"
+        },
+        "fileUpload": {
+          "dragDropText": "Arrastrá y soltá el archivo aquí",
+          "clickToSelect": "O hacé clic para seleccionar",
+          "acceptedTypes": "Por favor, adjuntá la documentación en formato PDF, JPG o PNG, con un peso máximo de 10 MB por archivo.",
+          "invalidType": "Tipo de archivo no válido",
+          "sizeLimit": "El archivo excede el tamaño máximo de {{max}}MB"
+        },
+        "yes": "Sí",
+        "no": "No"
+      },
+      "stepper": {
+        "step1": "Datos del titular",
+        "step2": "Datos fiscales y comercio",
+        "step3": "Documentación"
+      },
+      "buttons": {
+        "save": "Registrar comercio"
+      },
+      "closeModal": {
+        "title": "¿Estás seguro que querés salir?",
+        "subtitle": "Perderás todo el proceso cargado hasta el momento.",
+        "confirm": "Sí, deseo salir",
+        "cancel": "No, deseo continuar"
+      },
+      "errors": {
+        "get_provinces": "Error al obtener las provincias. Por favor, intente nuevamente.",
+        "get_localities": "Error al obtener las localidades. Por favor, intente nuevamente.",
+        "create_store_success": "Comercio registrado exitosamente.",
+        "create_store_error": "Error al crear el comercio.",
+        "associate_holder_error": "Error al asociar el titular.",
+        "upload_documents_error": "Error al subir la documentación.",
+        "upload_documents_success": "Documentación subida exitosamente.",
+        "create_user_and_assign_to_store_success": "Titular asociado exitosamente.",
+        "create_user_and_assign_to_store_error": "Error al asociar el titular."
+      }
+    },
+    "edit": {
+      "commons": {
+        "buttons": {
+          "backToStores": "Volver a comercios"
+        },
+        "tabs": {
+          "general": "General",
+          "branches": "Sucursales",
+          "users": "Usuarios",
+          "roles": "Roles",
+          "documents": "Documentación",
+          "liquidity": "Liquidaciones",
+          "reports": "Reportes"
+        },
+        "sections": {
+          "taxData": "Datos Fiscales",
+          "businessData": "Datos del Comercio",
+          "legalAddress": "Domicilio Legal",
+          "personalData": "Datos del titular",
+          "contactData": "Datos de Contacto",
+          "addressData": "Datos del Domicilio"
+        },
+        "success": {
+          "updateStoreGeneral": "Comercio actualizado exitosamente",
+          "updateStoreUser": "Usuario actualizado exitosamente",
+          "downloadDocument": "Documento descargado exitosamente",
+          "uploadDocument": "Documento subido exitosamente",
+          "updateDocument": "Documento actualizado exitosamente",
+          "updateDocumentStatus": "Estado del documento actualizado exitosamente"
+        },
+        "errors": {
+          "getStoreGeneral": "Error al obtener los datos del comercio",
+          "updateStoreGeneral": "Error al actualizar el comercio",
+          "getProvinces": "Error al obtener las provincias",
+          "getLocalities": "Error al obtener las localidades",
+          "getStoreUsers": "Error al obtener los usuarios",
+          "getStoreUser": "Error al obtener el usuario",
+          "updateStoreUser": "Error al actualizar el usuario",
+          "getStoreDocuments": "Error al obtener los documentos del comercio",
+          "downloadDocument": "Error al descargar el documento",
+          "uploadDocument": "Error al subir el documento",
+          "updateDocument": "Error al actualizar el documento",
+          "updateDocumentStatus": "Error al cambiar el estado del documento"
+        },
+        "comingSoon": "Funcionalidad en desarrollo"
+      },
+      "documents": {
+        "changeStatus": {
+          "approveTitle": "Aprobar Documento",
+          "rejectTitle": "Rechazar Documento",
+          "changeTitle": "Cambiar estado del Documento",
+          "approveMessage": "¿Está seguro que desea aprobar este documento? Esta acción no se puede deshacer.",
+          "rejectMessage": "¿Está seguro que desea rechazar este documento? Esta acción no se puede deshacer.",
+          "changeMessage": "¿Está seguro que desea cambiar el estado de este documento?",
+          "documentType": "Tipo de documento",
+          "name": "Nombre del documento",
+          "currentStatus": "Estado actual",
+          "newStatus": "Nuevo estado",
+          "cancel": "Cancelar",
+          "approve": "Aprobar",
+          "reject": "Rechazar",
+          "confirm": "Confirmar"
+        },
+        "status": {
+          "aprobado": "Aprobado",
+          "rechazado": "Rechazado",
+          "pendiente": "Pendiente"
+        }
+      },
+      "generalSection": {
+        "title": "Datos del comercio",
+        "description": "Información general del comercio",
+        "fields": {
+          "businessNameStore": "Razón Social",
+          "tradeNameStore": "Nombre de fantasía",
+          "streetStore": "Calle",
+          "streetNumberStore": "Número",
+          "floorStore": "Piso",
+          "apartmentStore": "Depto",
+          "zipCodeStore": "Código Postal",
+          "localityStore": "Localidad",
+          "provinceStore": "Provincia",
+          "emailStore": "E-mail",
+          "vatConditionStore": "Condición IVA",
+          "cuitStore": "CUIT",
+          "iibbRegisteredStore": "Inscripción en IIBB",
+          "profitsRegisteredStore": "Inscripto a ganancias",
+          "categoryStore": "Rubro/s"
+        },
+        "placeholders": {
+          "businessNameStore": "Ingrese la razón social",
+          "tradeNameStore": "Ingrese el nombre de fantasía",
+          "streetStore": "Ingrese la calle",
+          "streetNumberStore": "Ingrese el número",
+          "floorStore": "Ingrese el piso",
+          "apartmentStore": "Ingrese el departamento",
+          "zipCodeStore": "Ingrese el código postal",
+          "localityStore": "Seleccione la localidad",
+          "provinceStore": "Seleccione la provincia",
+          "emailStore": "Ingrese el email",
+          "vatConditionStore": "Seleccione la condición IVA",
+          "cuitStore": "Ingrese el CUIT",
+          "iibbRegisteredStore": "Seleccione la inscripción en IIBB",
+          "profitsRegisteredStore": "Seleccione la inscripción a ganancias",
+          "categoryStore": "Seleccione el/los rubro/s"
+        }
+      },
+      "userSection": {
+        "title": "Datos del usuario",
+        "returnButton": "Volver",
+        "viewEditUser": "Ver/editar usuario",
+        "fields": {
+          "lastNameUser": "Apellido",
+          "firstNameUser": "Nombre",
+          "dniUser": "DNI",
+          "birthDateUser": "Fecha de nacimiento",
+          "genderUser": "Género",
+          "phoneNumberUser": "Número de teléfono",
+          "emailUser": "E-mail",
+          "addressUser": "Calle",
+          "addressNumberUser": "Número",
+          "localityUser": "Localidad",
+          "provinceUser": "Provincia",
+          "zipCodeUser": "Código Postal"
+        },
+        "placeholders": {
+          "lastNameUser": "Ingrese el apellido",
+          "firstNameUser": "Ingrese el nombre",
+          "dniUser": "Ingrese el DNI",
+          "birthDateUser": "Seleccione fecha",
+          "genderUser": "Seleccione el género",
+          "phoneNumberUser": "Ingrese el número de teléfono",
+          "emailUser": "usuario@dominio.com",
+          "addressUser": "Ingrese la calle",
+          "addressNumberUser": "Número",
+          "localityUser": "Ingrese la localidad",
+          "provinceUser": "Seleccione la provincia",
+          "zipCodeUser": "Ingrese el código postal"
+        },
+        "table": {
+          "editUser": "Editar usuario"
+        }
+      },
+      "documentsSection": {
+        "title": "Documentación",
+        "description": "Documentación del comercio",
+        "noDocuments": "No hay documentos disponibles para este comercio.",
+        "loading": "Cargando documentos...",
+        "table": {
+          "name": "Nombre",
+          "date": "Fecha de carga",
+          "status": "Estado",
+          "actions": "Acciones",
+          "type": "Tipo de documento",
+          "afipRegistration": "Registro AFIP",
+          "iibbRegistration": "Registro IIBB",
+          "dniFront": "DNI Frente",
+          "dniBack": "DNI Dorso",
+          "powerOfAttorney": "Poder del Titular",
+          "businessRegistrationForm": "Formulario de Registro",
+          "brandIcon": "Logo de Marca"
+        },
+        "statuses": {
+          "pending": "Pendiente de validación",
+          "approved": "Aprobado",
+          "rejected": "Rechazado",
+          "expired": "Vencido",
+          "missing": "Faltante"
+        },
+        "actions": {
+          "approve": "Aprobar",
+          "reject": "Rechazar",
+          "update": "Actualizar",
+          "approveTooltip": "Aprobar documento",
+          "rejectTooltip": "Rechazar documento",
+          "updateTooltip": "Actualizar documento",
+          "noActions": "Sin acciones",
+          "notAvailable": "No disponible",
+          "uploadTooltip": "Subir documento",
+          "download": "Descargar documento"
+        },
+        "upload": {
+          "title": "Subir documento",
+          "description": "Selecciona el archivo del documento que deseas subir.",
+          "submit": "Subir documento"
+        },
+        "update": {
+          "title": "Actualizar documento",
+          "description": "Selecciona el archivo del documento que deseas actualizar.",
+          "submit": "Actualizar documento"
+        }
+      }
+    }
+  },
+  "addBranches": {
+    "title": "Alta de sucursales",
+    "description": "Completá los datos de cada sucursal que quieras agregar al comercio.",
+    "newBranch": "Nueva sucursal",
+    "headerBox": {
+      "title": "Agregar sucursales",
+      "description": "Ingresá los datos de las sucursales para habilitar su operación dentro del sistema. "
+    },
+    "fields": {
+      "name": "Nombre de la sucursal",
+      "street": "Calle",
+      "streetNumber": "Nro",
+      "locality": "Localidad",
+      "province": "Provincia",
+      "zipCode": "Código postal",
+      "email": "E-mail"
+    },
+    "placeholders": {
+      "name": "Ingrese el nombre de la sucursal",
+      "street": "Ingrese la calle",
+      "streetNumber": "Número",
+      "locality": "Ingrese la localidad",
+      "province": "Seleccione la provincia",
+      "email": "usuario@dominio.com"
+    },
+    "buttons": {
+      "remove": "Eliminar",
+      "addAnother": "Agregar otra sucursal",
+      "save": "Guardar sucursales",
+      "cancel": "Cancelar",
+      "addNewBranch": "Agregar sucursal"
+    },
+    "errors": {
+      "update_store_success": "Sucursales actualizadas exitosamente.",
+      "update_store_error": "Error al actualizar las sucursales.",
+      "get_provinces": "Error al obtener las provincias. Por favor, intente nuevamente.",
+      "get_localities": "Error al obtener las localidades. Por favor, intente nuevamente.",
+      "get_store_data": "Error al obtener los datos del comercio. Por favor, intente nuevamente.",
+      "noBranches": "No hay sucursales registradas actualmente."
+    }
+  },
+
+  "components": {
+    "header": {
+      "logout_button": "Cerrar sesión"
+    },
+    "sideMenu": {
+      "home": "Inicio",
+      "comercios": "Comercios",
+      "reports": "Reportes"
+    },
+
+    "fileInput": {
+      "sizeLimit": "Has excedido el límite del tamaño del archivo.",
+      "dragDropText": "Arrastrá y soltá el archivo aquí",
+      "clickToSelect": "O hacé clic para seleccionar",
+      "sizeLimitMessage": "El archivo excede el tamaño máximo de {{max}}MB",
+      "invalidType": "Tipo de archivo no válido"
+    },
+    "selectInput": {
+      "loading": "Cargando opciones...",
+      "search_placeholder": "Buscar...",
+      "no_options": "No hay opciones disponibles"
+    },
+    "accessDeniedModal": {
+      "title": "Acceso denegado",
+      "subtitle": "No tienes permiso para realizar esta operación.",
+      "close": "Cerrar"
+    }
+  },
+  "reports": {
+    "title": "Solicitudes de crédito",
+    "subtitle": "Filtrá y descargá reportes en formato Excel según fecha y estado de las solicitudes.",
+    "headerBox": {
+      "title": "Generación de reportes",
+      "description": "Seleccioná el rango de fechas y estado para generar el reporte de solicitudes de crédito."
+    },
+    "filters": {
+      "startDate": "Fecha desde",
+      "endDate": "Fecha hasta",
+      "status": "Estado de la solicitud",
+      "allStatuses": "Todos los estados",
+      "incomplete": "Incompleta",
+      "approved": "Aprobada",
+      "rejected": "Rechazada",
+      "startDatePlaceholder": "Selecciona fecha desde",
+      "endDatePlaceholder": "Selecciona fecha hasta",
+      "statusPlaceholder": "Selecciona estado"
+    },
+
+    "defaultValues": {
+      "filename": "reporte-solicitudes"
+    },
+    "validations": {
+      "startDateRequired": "La fecha desde es requerida",
+      "endDateRequired": "La fecha hasta es requerida",
+      "startDateAfterEndDate": "Debe ser menor a la fecha hasta",
+      "endDateBeforeStartDate": "Debe ser mayor a la fecha desde",
+      "statusRequired": "El estado es requerido",
+      "filenameRequired": "El nombre del reporte es requerido"
+    },
+    "actions": {
+      "filename": "Nombre del reporte",
+      "download": "Descargar reporte Excel",
+      "clearFilters": "Limpiar filtros"
+    },
+    "success": {
+      "download": "Reporte descargado",
+      "downloadMessage": "El reporte se ha descargado exitosamente."
+    },
+    "errors": {
+      "download": "Error al descargar el reporte",
+      "generic": "Ha ocurrido un error inesperado",
+      "dateRangeRequired": "Debe seleccionar un rango de fechas",
+      "invalidDateRange": "La fecha desde no puede ser mayor a la fecha hasta",
+      "noResults": "No hay resultados para los filtros aplicados"
+    }
+  },
+
+  "common": {
+    "edit": "Editar",
+    "save": "Guardar",
+    "cancel": "Cancelar",
+    "next": "Siguiente",
+    "previous": "Anterior",
+    "back": "Volver",
+    "saving": "Guardando...",
+    "waiting": "Espere...",
+    "validationsForm": {
+      "required": "Este campo es requerido",
+      "invalidEmail": "Ingrese un correo electrónico válido",
+      "invalidCuit": "El CUIT debe tener 11 dígitos",
+      "invalidDni": "El DNI debe tener 8 dígitos",
+      "invalidPhone": "El número de teléfono debe tener entre 7 y 8 dígitos",
+      "invalidAge": "La edad debe estar entre 18 y 100 años",
+      "invalidStreetNumber": "El número debe ser un valor numérico positivo",
+      "invalidAddressNumber": "El número debe ser un valor numérico",
+      "invalidZipCode": "El código postal debe tener entre 4 y 5 dígitos",
+      "maxLength": "Máximo {{max}} caracteres",
+      "onlyLetters": "Solo se permiten letras",
+      "password_min_length": "La contraseña debe tener al menos 8 caracteres",
+      "password_must_contain_number": "La contraseña debe contener al menos 1 número",
+      "password_must_contain_special_char": "La contraseña debe contener al menos 1 carácter especial",
+      "password_must_contain_uppercase": "La contraseña debe contener al menos 1 letra mayúscula",
+      "password_must_contain_lowercase": "La contraseña debe contener al menos 1 letra minúscula",
+      "passwords_not_match": "Las contraseñas no coinciden",
+      "new_password_same_as_current": "La nueva contraseña no puede ser igual a la contraseña actual"
+    }
+  }
+}

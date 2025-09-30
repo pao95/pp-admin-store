@@ -1,0 +1,60 @@
+import { DependencyManager } from "../../../../dependencyManager";
+import { HttpUsersGateway } from "../../infrastructure/gateways/HttpUsersGateway";
+import { GetStoreAction } from "../../core/actions/GetStoreAction";
+import { GetUsersByStoreAction } from "../../core/actions/GetUsersByStoreAction";
+import { GetUserAction } from "../../core/actions/GetUserAction";
+import { UpdateStoreAction } from "../../core/actions/UpdateStoreAction";
+import { UpdateUserAction } from "../../core/actions/UpdateUserAction";
+import { GetProvincesAction } from "../../core/actions/GetProvincesAction";
+import { GetLocalitiesAction } from "../../core/actions/GetLocalitiesAction";
+import { HttpStoreGateway } from "../../infrastructure/gateways/HttpStoreGateway";
+import { GeoRefGateway } from "../../infrastructure/gateways/GeoRefGateway";
+import { GetIndustriesAction } from "../../core/actions/GetIndustriesAction";
+import { HttpMasterDataGateway } from "../../infrastructure/gateways/HttpMasterDataGateway";
+import { HttpDocumentsGateway } from "../../infrastructure/gateways/HttpDocumentsGateway";
+import { GetDocumentsByEntityIdAction } from "../../core/actions/GetDocumentsByEntityIdAction";
+import { DownloadDocumentAction } from "../../core/actions/DownloadDocumentAction";
+import { UploadDocumentActions } from "../../core/actions/UploadDocumentActions";
+import { UpdateDocumentAction } from "../../core/actions/UpdateDocumentAction";
+import { UpdateDocumentStatusAction } from "../../core/actions/UpdateDocumentStatusAction";
+import { IHttpClient } from "../../../httpClient/interfaces";
+
+export const initializeStoreDetailModule = (dependencyManager: DependencyManager) => {
+  const httpClient = GetHttpClientDependency(dependencyManager);
+  const storeDetailGateway = HttpStoreGateway(httpClient);
+  const usersGateway = HttpUsersGateway(httpClient);
+  const geoRefGateway = GeoRefGateway(httpClient);
+  const masterDataGateway = HttpMasterDataGateway(httpClient);
+  const documentsGateway = HttpDocumentsGateway(httpClient);
+  const getStoreAction = GetStoreAction(storeDetailGateway);
+  const getUsersByStoreAction = GetUsersByStoreAction(usersGateway);
+  const getUserAction = GetUserAction(usersGateway);
+  const updateStoreAction = UpdateStoreAction(storeDetailGateway);
+  const updateUserAction = UpdateUserAction(usersGateway);
+  const getProvincesAction = GetProvincesAction(geoRefGateway);
+  const getLocalitiesAction = GetLocalitiesAction(geoRefGateway);
+  const getIndustriesAction = GetIndustriesAction(masterDataGateway);
+  const getDocumentsByEntityIdAction = GetDocumentsByEntityIdAction(documentsGateway);
+  const downloadDocumentAction = DownloadDocumentAction(documentsGateway);
+  const uploadDocumentsAction = UploadDocumentActions(documentsGateway);
+  const updateDocumentAction = UpdateDocumentAction(documentsGateway);
+  const updateDocumentStatusAction = UpdateDocumentStatusAction(documentsGateway);
+
+  dependencyManager.register("getStoreAction", getStoreAction);
+  dependencyManager.register("getUsersByStoreAction", getUsersByStoreAction);
+  dependencyManager.register("getUserAction", getUserAction);
+  dependencyManager.register("updateStoreAction", updateStoreAction);
+  dependencyManager.register("updateUserAction", updateUserAction);
+  dependencyManager.register("getProvincesAction", getProvincesAction);
+  dependencyManager.register("getLocalitiesAction", getLocalitiesAction);
+  dependencyManager.register("getIndustriesAction", getIndustriesAction);
+  dependencyManager.register("getDocumentsByEntityIdAction", getDocumentsByEntityIdAction);
+  dependencyManager.register("downloadDocumentAction", downloadDocumentAction);
+  dependencyManager.register("uploadDocumentsAction", uploadDocumentsAction);
+  dependencyManager.register("updateDocumentAction", updateDocumentAction);
+  dependencyManager.register("updateDocumentStatusAction", updateDocumentStatusAction);
+};
+
+export const GetHttpClientDependency = (dependencyManager: DependencyManager) => {
+  return dependencyManager.resolve("httpClient") as IHttpClient;
+};
