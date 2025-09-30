@@ -2,7 +2,6 @@ import { IStoreGateway } from "../../core/gateways/IStoreGateway";
 import { HttpResponse, IHttpClient } from "../../../httpClient/interfaces";
 import { STORE_API } from "../../../../constants/api";
 import { IStore } from "../../../store/core/entities/IStore";
-import { IUpdateStoreResponse } from "../../core/entities/IUpdateStoreResponse";
 import { IUpdateStoreRequest } from "../../core/entities/IUpdateStoreRequest";
 
 // Interfaz que representa la estructura de datos de la API
